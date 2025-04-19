@@ -1,11 +1,41 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { ContactCTA } from "@/components/ContactCTA";
+import { CompanyIntro } from "@/components/CompanyIntro";
+import { MainHero } from "@/components/MainHero";
+import { SocialLinks } from "@/components/SocialLinks";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex flex-col items-center justify-center p-6">
+      <div className="w-full max-w-4xl mx-auto space-y-12 relative">
+        {/* Glowing orb effect */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/30 rounded-full blur-[100px] animate-pulse" />
+        
+        {/* Content */}
+        <MainHero />
+        <CompanyIntro />
+        <ContactCTA />
+        <SocialLinks />
+      </div>
+
+      {/* Code-like background effect */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 opacity-5">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <div
+              key={i}
+              className="text-xs text-gray-500 animate-slide"
+              style={{
+                position: "absolute",
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                opacity: Math.random() * 0.5 + 0.5,
+              }}
+            >
+              {"{debug_dream}"}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
