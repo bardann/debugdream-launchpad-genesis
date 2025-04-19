@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,6 +20,9 @@ export default {
     },
     extend: {
       colors: {
+        border: "#6E59A5",
+        input: "#7E69AB",
+        ring: "#9b87f5",
         background: {
           DEFAULT: '#1A1F2C',
           foreground: '#D6BCFA',
