@@ -20,28 +20,28 @@ export default {
     },
     extend: {
       colors: {
-        border: "#6E59A5",
-        input: "#7E69AB",
-        ring: "#9b87f5",
+        border: "#E0E0E0",
+        input: "#BDBDBD",
+        ring: "#9E9E9E",
         background: {
-          DEFAULT: '#1A1F2C',
-          foreground: '#D6BCFA',
+          DEFAULT: '#FFFFFF',
+          foreground: '#212121',
         },
         primary: {
-          DEFAULT: '#9b87f5',
+          DEFAULT: '#6A5ACD', // Slight purple to maintain brand identity
           foreground: '#FFFFFF',
         },
         secondary: {
-          DEFAULT: '#7E69AB',
-          foreground: '#F1F0FB',
+          DEFAULT: '#9370DB',
+          foreground: '#FFFFFF',
         },
         accent: {
-          DEFAULT: '#6E59A5',
-          foreground: '#F2FCE2',
+          DEFAULT: '#7B68EE',
+          foreground: '#FFFFFF',
         },
         muted: {
-          DEFAULT: '#8E9196',
-          foreground: '#D3E4FD',
+          DEFAULT: '#9E9E9E',
+          foreground: '#212121',
         },
         foreground: {
           DEFAULT: 'hsl(var(--foreground) / <alpha-value>)',

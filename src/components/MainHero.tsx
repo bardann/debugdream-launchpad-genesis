@@ -18,7 +18,7 @@ export const MainHero = () => {
 
   return (
     <div className="text-center space-y-6">
-      <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent glitch-text">
+      <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
         {glitchText}
       </h1>
       <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
