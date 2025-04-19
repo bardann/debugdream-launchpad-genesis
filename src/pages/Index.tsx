@@ -6,10 +6,10 @@ import { SocialLinks } from "@/components/SocialLinks";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex flex-col items-center justify-center p-6">
+    <div className="min-h-screen bg-background text-primary-foreground flex flex-col items-center justify-center p-6">
       <div className="w-full max-w-4xl mx-auto space-y-12 relative">
         {/* Glowing orb effect */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/30 rounded-full blur-[100px] animate-pulse" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/30 rounded-full blur-[100px] animate-pulse" />
         
         {/* Content */}
         <MainHero />
@@ -24,7 +24,7 @@ const Index = () => {
           {Array.from({ length: 20 }).map((_, i) => (
             <div
               key={i}
-              className="text-xs text-gray-500 animate-slide"
+              className="text-xs text-muted-foreground animate-slide"
               style={{
                 position: "absolute",
                 left: `${Math.random() * 100}%`,

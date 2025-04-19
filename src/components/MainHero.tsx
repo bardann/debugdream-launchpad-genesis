@@ -18,10 +18,10 @@ export const MainHero = () => {
 
   return (
     <div className="text-center space-y-6">
-      <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 glitch-text">
+      <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent glitch-text">
         {glitchText}
       </h1>
-      <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto">
+      <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
         Our new digital home is under construction. Something awesome is coming soon.
       </p>
     </div>
