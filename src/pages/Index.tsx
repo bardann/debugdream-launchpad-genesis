@@ -7,9 +7,9 @@ import { SocialLinks } from "@/components/SocialLinks";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-primary-foreground flex flex-col items-center justify-center p-6">
-      <div className="w-full max-w-4xl mx-auto space-y-12 relative">
-        {/* Glowing orb effect */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/30 rounded-full blur-[100px] animate-pulse" />
+      <div className="w-full max-w-4xl mx-auto space-y-16 relative">
+        {/* Subtle glow effect */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[120px]" />
         
         {/* Content */}
         <MainHero />
@@ -18,10 +18,10 @@ const Index = () => {
         <SocialLinks />
       </div>
 
-      {/* Code-like background effect */}
+      {/* Minimalistic background effect */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute inset-0 opacity-5">
-          {Array.from({ length: 20 }).map((_, i) => (
+        <div className="absolute inset-0 opacity-[0.02]">
+          {Array.from({ length: 12 }).map((_, i) => (
             <div
               key={i}
               className="text-xs text-muted-foreground animate-slide"
@@ -32,7 +32,7 @@ const Index = () => {
                 opacity: Math.random() * 0.5 + 0.5,
               }}
             >
-              {"{debug_dream}"}
+              {"{dream}"}
             </div>
           ))}
         </div>

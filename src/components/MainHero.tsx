@@ -17,12 +17,12 @@ export const MainHero = () => {
   }, []);
 
   return (
-    <div className="text-center space-y-6">
-      <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">
+    <div className="text-center space-y-8">
+      <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary/90 via-secondary/80 to-accent/70">
         {glitchText}
       </h1>
-      <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-        Our new digital home is under construction. Something awesome is coming soon.
+      <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed">
+        Transforming ideas into elegant digital solutions
       </p>
     </div>
   );
